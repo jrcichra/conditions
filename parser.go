@@ -166,7 +166,7 @@ func (p *Parser) scanWithMapping() (Token, string) {
 			}
 		}
 
-	case scanner.String:
+	case scanner.String, '.':
 		tok = STRING
 	case scanner.Ident:
 		ttU := strings.ToUpper(tt)
